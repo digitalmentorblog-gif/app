@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Peas - 신선한 농산물</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 상단 네비게이션 -->
+    <header class="navbar">
+        <div class="nav-container">
+            <button class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <h1 class="logo">World Peas</h1>
+            <button class="cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- 메인 컨텐츠 -->
+    <main class="main-content">
+        <!-- 카테고리 헤더 -->
+        <div class="category-header">
+            <h2 class="category-title">All Aisles/<span class="current-category">Produce</span></h2>
+            <button class="search-btn">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+
+        <!-- 필터 버튼 -->
+        <div class="filter-section">
+            <button class="filter-btn active">Default</button>
+            <button class="filter-btn">A-Z</button>
+            <button class="filter-btn">$ → $$</button>
+        </div>
+
+        <!-- 상품 그리드 -->
+        <div class="products-grid">
+            <!-- 마늘 -->
+            <div class="product-card">
+                <button class="favorite-btn" data-product="garlic">
+                    <i class="far fa-heart"></i>
+                </button>
+                <div class="product-image">
+                    <img src="/img/garlic-3419544_640.jpg" alt="Garlic clove">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Garlic clove</h3>
+                    <p class="product-price">$0.89 each</p>
+                    <p class="product-farm">Kunisaki Farms →</p>
+                    <button class="add-to-cart-btn" data-product="garlic" data-price="0.89">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 설탕완두 -->
+            <div class="product-card">
+                <button class="favorite-btn" data-product="pea">
+                    <i class="far fa-heart"></i>
+                </button>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1587735243615-c03f25aaff15?w=300&h=200&fit=crop" alt="Sugar snap pea">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Sugar snap pea</h3>
+                    <p class="product-price">$2.29/lb</p>
+                    <p class="product-farm">Helmbolt Orchards →</p>
+                    <button class="add-to-cart-btn" data-product="pea" data-price="2.29">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 생강 -->
+            <div class="product-card">
+                <button class="favorite-btn" data-product="ginger">
+                    <i class="far fa-heart"></i>
+                </button>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=300&h=200&fit=crop" alt="Ginger">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Ginger</h3>
+                    <p class="product-price">$4.20/lb</p>
+                    <p class="product-farm">Bui Farms →</p>
+                    <button class="add-to-cart-btn" data-product="ginger" data-price="4.20">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 양파 -->
+            <div class="product-card">
+                <button class="favorite-btn" data-product="onion">
+                    <i class="far fa-heart"></i>
+                </button>
+                <div class="product-image">
+                    <img src="/img/onions-1238332_640.jpg" alt="Sweet onion">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Sweet onion</h3>
+                    <p class="product-price">$0.39/lb</p>
+                    <p class="product-farm">Castelao Farms →</p>
+                    <button class="add-to-cart-btn" data-product="onion" data-price="0.39">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 라즈베리 -->
+            <div class="product-card">
+                <button class="favorite-btn" data-product="raspberry">
+                    <i class="far fa-heart"></i>
+                </button>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1577003833619-76bbd7f82948?w=300&h=200&fit=crop" alt="Raspberries">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Raspberries</h3>
+                    <p class="product-price">$3.99 pint</p>
+                    <p class="product-farm">Bernal Growers →</p>
+                    <button class="add-to-cart-btn" data-product="raspberry" data-price="3.99">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 바나나 -->
+            <div class="product-card">
+                <button class="favorite-btn" data-product="banana">
+                    <i class="far fa-heart"></i>
+                </button>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=300&h=200&fit=crop" alt="Bananas">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Bananas</h3>
+                    <p class="product-price">$0.64/lb</p>
+                    <p class="product-farm">Lowry Farms →</p>
+                    <button class="add-to-cart-btn" data-product="banana" data-price="0.64">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 장바구니 모달 -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-modal-content">
+            <div class="cart-modal-header">
+                <h2>장바구니</h2>
+                <button class="cart-modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="cart-modal-body">
+                <div id="cart-items" class="cart-items">
+                    <!-- 장바구니 아이템들이 여기에 동적으로 추가됩니다 -->
+                </div>
+                <div id="cart-empty" class="cart-empty" style="display: none;">
+                    <div class="cart-empty-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <p>장바구니가 비어있습니다</p>
+                    <p class="cart-empty-subtitle">상품을 추가해보세요!</p>
+                </div>
+            </div>
+            <div class="cart-modal-footer">
+                <div class="cart-total">
+                    <span class="cart-total-label">총 합계:</span>
+                    <span id="cart-total-price" class="cart-total-price">$0.00</span>
+                </div>
+                <button class="checkout-btn">
+                    <i class="fas fa-credit-card"></i>
+                    결제하기
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
